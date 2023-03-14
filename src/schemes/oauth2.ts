@@ -381,10 +381,10 @@ export class Oauth2Scheme<
         codeVerifier = this.$auth.$storage.getUniversal(
           this.name + '.pkce_code_verifier'
         )
-        this.$auth.$storage.setUniversal(
-          this.name + '.pkce_code_verifier',
-          null
-        )
+        // this.$auth.$storage.setUniversal(
+        //   this.name + '.pkce_code_verifier',
+        //   null
+        // )
       }
 
       const response = await this.$auth.request({
